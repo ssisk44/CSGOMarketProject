@@ -3,6 +3,20 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
+        <entry key="\Analysis\FINDINGS.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Analysis\FloatTables\Chroma_2_Case\Mil_Spec_Grade\AK-47_Elite_Build.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\Analysis\Plain\plainCS20 Case.csv">
           <value>
             <Attribute>
@@ -234,6 +248,195 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\Analysis\THE_FINAL_SOLUTION\Chroma_2_Case\AK-47Elite_Build.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Analysis\THE_FINAL_SOLUTION\Chroma_2_Case\AWPWorm_God.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Analysis\THE_FINAL_SOLUTION\Chroma_2_Case\CZ75-AutoPole_Position.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Analysis\THE_FINAL_SOLUTION\Chroma_2_Case\Desert_EagleBronze_Deco.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Analysis\THE_FINAL_SOLUTION\Chroma_2_Case\FAMASDjinn.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Analysis\THE_FINAL_SOLUTION\Chroma_2_Case\Five-SeveNMonkey_Business.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Analysis\THE_FINAL_SOLUTION\Chroma_2_Case\Galil_AREco.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Analysis\THE_FINAL_SOLUTION\Chroma_2_Case\MAG-7Heat.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Analysis\THE_FINAL_SOLUTION\Chroma_2_Case\MP7Armor_Core.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Analysis\THE_FINAL_SOLUTION\Chroma_2_Case\NegevMan-o'-war.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Analysis\THE_FINAL_SOLUTION\Chroma_2_Case\P250Valence.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Analysis\THE_FINAL_SOLUTION\Chroma_2_Case\Sawed-OffOrigami.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Analysis\THE_FINAL_SOLUTION\Chroma_2_Case\StatTrakAK-47Elite_Build.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Analysis\THE_FINAL_SOLUTION\Chroma_2_Case\StatTrakAWPWorm_God.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Analysis\THE_FINAL_SOLUTION\Chroma_2_Case\StatTrakCZ75-AutoPole_Position.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Analysis\THE_FINAL_SOLUTION\Chroma_2_Case\StatTrakDesert_EagleBronze_Deco.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Analysis\THE_FINAL_SOLUTION\Chroma_2_Case\StatTrakFAMASDjinn.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Analysis\THE_FINAL_SOLUTION\Chroma_2_Case\StatTrakFive-SeveNMonkey_Business.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Analysis\THE_FINAL_SOLUTION\Chroma_2_Case\StatTrakGalil_AREco.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Analysis\THE_FINAL_SOLUTION\Chroma_2_Case\StatTrakMAG-7Heat.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Analysis\THE_FINAL_SOLUTION\Chroma_2_Case\StatTrakMP7Armor_Core.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Analysis\THE_FINAL_SOLUTION\Chroma_2_Case\StatTrakNegevMan-o'-war.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Analysis\THE_FINAL_SOLUTION\Chroma_2_Case\StatTrakP250Valence.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Analysis\THE_FINAL_SOLUTION\Chroma_2_Case\StatTrakSawed-OffOrigami.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Analysis\THE_FINAL_SOLUTION\Chroma_2_Case\StatTrakUMP-45Grand_Prix.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Analysis\THE_FINAL_SOLUTION\Chroma_2_Case\UMP-45Grand_Prix.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Analysis\THE_FINAL_SOLUTION\Operation_Bravo_Case\AWPGraphite.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\Data\Agents\agents.csv">
           <value>
             <Attribute>
@@ -354,6 +557,13 @@
           </value>
         </entry>
         <entry key="\Data\Cases\Winter Offensive Weapon Case.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Data\Float\floatCaps.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />

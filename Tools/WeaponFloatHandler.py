@@ -1,8 +1,10 @@
+import os
 import time
 import numpy as np
 import pandas as pd
 from bs4 import BeautifulSoup
 import requests
+import sys
 import Tools.FileHandler as FileHandler
 import Tools.PriceHandler as PriceHandler
 
@@ -14,12 +16,12 @@ wearArray = [
     'Battle-Scarred'
 ]
 wearRangeMap = {
-    'Factory New': [0.000000000000000000000000000, 0.06999999284744262695312500],
-    'Minimal Wear': [0.070000000298023223876953125, 0.14999999105930328369140625],
-    'Field-Tested': [0.150000005960464477539062500, 0.37999999523162841796875000],
-    'Well-Worn': [0.380000025033950805664062500, 0.44999998807907104492187500],
-    'Battle-Scarred': [0.450000017881393432617187500, 1.00000000000000000000000000]
-}
+            'Factory New': [0.00, 0.0699999999999999999999999999999999999],
+            'Minimal Wear': [0.07, 0.149999999999999999999999999999999999],
+            'Field-Tested': [0.15, 0.379999999999999999999999999999999999],
+            'Well-Worn': [0.38, 0.449999999999999999999999999999999999],
+            'Battle-Scarred': [0.45, 1.00]
+        }
 weaponArr = [
     'CZ75-Auto',
     'Desert Eagle',
@@ -58,6 +60,7 @@ weaponArr = [
 ]
 urlPrefix = 'https://csgostash.com/weapon/'
 
+
 def getLinksOfWeapons(self):
     allWeaponsLinkArr = []
     for weapon in self.weaponArr:
@@ -77,6 +80,7 @@ def getLinksOfWeapons(self):
     df.to_csv('Data/Float/floatLinks.csv', index=False)
     return allWeaponsLinkArr
 
+
 def getFloatRangesOfAllWeapons():
     linkArr = pd.read_csv('../Data/Float/floatLinks.csv').to_numpy().tolist()
     newLinkArray = []
@@ -91,32 +95,34 @@ def getFloatRangesOfAllWeapons():
         newLinkArray.append(entry)
         print(entry, '\n')
         time.sleep(0)
-    FileHandler.writeDFToFilepathAsCSV(newLinkArray, ['Weapon', 'Skin', 'Link', 'Low Float Cap', 'High Float Cap'], '../Data/Float/floatCaps.csv')
+    FileHandler.writeDFToFilepathAsCSV(newLinkArray, ['Weapon', 'Skin', 'Link', 'Low Float Cap', 'High Float Cap'],
+                                       '../Data/Float/floatCaps.csv')
 
-def convertArrayOfFloatBounds(floatArr, minOutcomeRange, maxOutcomeRange):
-    # TO DO: AUTO FIND BOUNDS
-    # only outcome float caps matter when trading up skins, return new skin float and wear
-    newFloat = (sum(floatArr)/len(floatArr) * (maxOutcomeRange-minOutcomeRange)) + minOutcomeRange
-    for wear in wearArray:
-        wearRange = wearRangeMap[wear]
-        wearMin = wearRange[0]
-        wearMax = wearRange[1]
-        if wearMin <= newFloat <= wearMax:
-            return [newFloat, wear]
 
-def getFloatCapsByWeaponNameSkinName(weaponName, skinName):
-    floatArr = pd.read_csv('Data/Float/floatCaps.csv').to_numpy().tolist()
+def getFloatCapsByWeaponNameSkinName(weaponName, skinName, pathToFloatCaps):
+    floatArr = pd.read_csv(pathToFloatCaps).to_numpy().tolist()
     for floatEntry in floatArr:
         if weaponName == floatEntry[0] and skinName == floatEntry[1]:
             return [floatEntry[3], floatEntry[4]]
 
+
 def getTradeUpFloat(outcomeWeaponName, outcomeSkinName, tradeUpAverageFloat: float):
-    floatRange = getFloatCapsByWeaponNameSkinName(outcomeWeaponName, outcomeSkinName)
+    floatRange = getFloatCapsByWeaponNameSkinName(outcomeWeaponName, outcomeSkinName, '../Data/Float/floatCaps.csv')
     newFloat = (tradeUpAverageFloat * (floatRange[1] - floatRange[0])) + floatRange[0]
+    print(outcomeWeaponName, outcomeSkinName, floatRange, newFloat)
     for wear in wearArray:
         wearRange = wearRangeMap[wear]
         wearMin = wearRange[0]
         wearMax = wearRange[1]
         if wearMin <= newFloat <= wearMax:
-            price = PriceHandler.getWeaponPrice(outcomeWeaponName, outcomeSkinName, wear)
-            return [newFloat, wear, price]
+            return wear
+
+def getAverageValueOfTradeUp(priceMap, uniqueWeapons, averageFloat):
+    profit = 0
+    for weapon in uniqueWeapons:
+        resultTradeUpWear = getTradeUpFloat(weapon[0], weapon[1], averageFloat)
+        price = priceMap[weapon[1]][resultTradeUpWear]
+        print(resultTradeUpWear, price)
+        profit += price
+    averageProfit = profit / len(uniqueWeapons)
+    return averageProfit
