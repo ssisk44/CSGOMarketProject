@@ -3,616 +3,350 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
-        <entry key="\Analysis\FINDINGS.csv">
+        <entry key="\analyis\AllPositiveYieldResults.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\Analysis\FloatTables\Chroma_2_Case\Mil_Spec_Grade\AK-47_Elite_Build.csv">
+        <entry key="\analyis\AllResults.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\Analysis\Plain\plainCS20 Case.csv">
+        <entry key="\resources\cases\ALL_CASES.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\Analysis\Plain\plainChroma 2 Case.csv">
+        <entry key="\resources\cases\CS20 Case.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\Analysis\Plain\plainChroma 3 Case.csv">
+        <entry key="\resources\cases\CSGO Weapon Case 2.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\Analysis\Plain\plainClutch Case.csv">
+        <entry key="\resources\cases\CSGO Weapon Case 3.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\Analysis\Plain\plainDanger Zone Case.csv">
+        <entry key="\resources\cases\CSGO Weapon Case.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\Analysis\Plain\plainDreams and Nightmares Case.csv">
+        <entry key="\resources\cases\Chroma 2 Case.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\Analysis\Plain\plainFalchion Case.csv">
+        <entry key="\resources\cases\Chroma 3 Case.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\Analysis\Plain\plainFracture Case.csv">
+        <entry key="\resources\cases\Chroma Case.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\Analysis\Plain\plainGamma 2 Case.csv">
+        <entry key="\resources\cases\Danger Zone Case.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\Analysis\Plain\plainGamma Case.csv">
+        <entry key="\resources\cases\Dreams and Nightmares Case.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\Analysis\Plain\plainGlove Case.csv">
+        <entry key="\resources\cases\Falchion Case.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\Analysis\Plain\plainHorizon Case.csv">
+        <entry key="\resources\cases\Fracture Case.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\Analysis\Plain\plainHuntsman Weapon Case.csv">
+        <entry key="\resources\cases\Gamma 2 Case.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\Analysis\Plain\plainOperation Bravo Case.csv">
+        <entry key="\resources\cases\Gamma Case.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\Analysis\Plain\plainOperation Breakout Weapon Case.csv">
+        <entry key="\resources\cases\Glove Case.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\Analysis\Plain\plainOperation Broken Fang Case.csv">
+        <entry key="\resources\cases\Horizon Case.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\Analysis\Plain\plainOperation Hydra Case.csv">
+        <entry key="\resources\cases\Huntsman Weapon Case.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\Analysis\Plain\plainOperation Phoenix Weapon Case.csv">
+        <entry key="\resources\cases\Operation Bravo Case.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\Analysis\Plain\plainOperation Riptide Case.csv">
+        <entry key="\resources\cases\Operation Breakout Weapon Case.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\Analysis\Plain\plainOperation Vanguard Weapon Case.csv">
+        <entry key="\resources\cases\Operation Broken Fang Case.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\Analysis\Plain\plainOperation Wildfire Case.csv">
+        <entry key="\resources\cases\Operation Phoenix Weapon Case.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\Analysis\Plain\plainPrisma 2 Case.csv">
+        <entry key="\resources\cases\Operation Riptide Case.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\Analysis\Plain\plainPrisma Case.csv">
+        <entry key="\resources\cases\Operation Vanguard Weapon Case.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\Analysis\Plain\plainRecoil Case.csv">
+        <entry key="\resources\cases\Operation Wildfire Case.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\Analysis\Plain\plainRevolution Case.csv">
+        <entry key="\resources\cases\Prisma 2 Case.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\Analysis\Plain\plainRevolver Case.csv">
+        <entry key="\resources\cases\Prisma Case.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\Analysis\Plain\plainShadow Case.csv">
+        <entry key="\resources\cases\Revolution Case.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\Analysis\Plain\plainShattered Web Case.csv">
+        <entry key="\resources\cases\Revolver Case.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\Analysis\Plain\plainSnakebite Case.csv">
+        <entry key="\resources\cases\Shadow Case.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\Analysis\Plain\plainSpectrum 2 Case.csv">
+        <entry key="\resources\cases\Shattered Web Case.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\Analysis\Plain\plainSpectrum Case.csv">
+        <entry key="\resources\cases\Spectrum 2 Case.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\Analysis\Plain\plainWinter Offensive Weapon Case.csv">
+        <entry key="\resources\cases\Spectrum Case.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\Analysis\Plain\plaineSports 2014 Winter Case.csv">
+        <entry key="\resources\cases\Winter Offensive Weapon Case.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\Analysis\THE_FINAL_SOLUTION\Chroma_2_Case\AK-47Elite_Build.csv">
+        <entry key="\resources\cases\eSports 2013 Case.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\Analysis\THE_FINAL_SOLUTION\Chroma_2_Case\AWPWorm_God.csv">
+        <entry key="\resources\cases\eSports 2013 Winter Case.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\Analysis\THE_FINAL_SOLUTION\Chroma_2_Case\CZ75-AutoPole_Position.csv">
+        <entry key="\resources\cases\eSports 2014 Winter Case.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\Analysis\THE_FINAL_SOLUTION\Chroma_2_Case\Desert_EagleBronze_Deco.csv">
+        <entry key="\resources\floats\floatCaps.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\Analysis\THE_FINAL_SOLUTION\Chroma_2_Case\FAMASDjinn.csv">
+        <entry key="\resources\floats\floatLinks.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\Analysis\THE_FINAL_SOLUTION\Chroma_2_Case\Five-SeveNMonkey_Business.csv">
+        <entry key="\tmp\agentsItems.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\Analysis\THE_FINAL_SOLUTION\Chroma_2_Case\Galil_AREco.csv">
+        <entry key="\tmp\capsuleItems.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\Analysis\THE_FINAL_SOLUTION\Chroma_2_Case\MAG-7Heat.csv">
+        <entry key="\tmp\graffitiItems.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\Analysis\THE_FINAL_SOLUTION\Chroma_2_Case\MP7Armor_Core.csv">
+        <entry key="\tmp\knifeItems.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\Analysis\THE_FINAL_SOLUTION\Chroma_2_Case\NegevMan-o'-war.csv">
+        <entry key="\tmp\musicItems.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\Analysis\THE_FINAL_SOLUTION\Chroma_2_Case\P250Valence.csv">
+        <entry key="\tmp\patchItems.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\Analysis\THE_FINAL_SOLUTION\Chroma_2_Case\Sawed-OffOrigami.csv">
+        <entry key="\tmp\stickerItems.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\Analysis\THE_FINAL_SOLUTION\Chroma_2_Case\StatTrakAK-47Elite_Build.csv">
+        <entry key="\tmp\unfinishedAllItems.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\Analysis\THE_FINAL_SOLUTION\Chroma_2_Case\StatTrakAWPWorm_God.csv">
+        <entry key="\tmp\unfinishedAllItemsTypes.csv">
           <value>
             <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\Analysis\THE_FINAL_SOLUTION\Chroma_2_Case\StatTrakCZ75-AutoPole_Position.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\Analysis\THE_FINAL_SOLUTION\Chroma_2_Case\StatTrakDesert_EagleBronze_Deco.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\Analysis\THE_FINAL_SOLUTION\Chroma_2_Case\StatTrakFAMASDjinn.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\Analysis\THE_FINAL_SOLUTION\Chroma_2_Case\StatTrakFive-SeveNMonkey_Business.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\Analysis\THE_FINAL_SOLUTION\Chroma_2_Case\StatTrakGalil_AREco.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\Analysis\THE_FINAL_SOLUTION\Chroma_2_Case\StatTrakMAG-7Heat.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\Analysis\THE_FINAL_SOLUTION\Chroma_2_Case\StatTrakMP7Armor_Core.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\Analysis\THE_FINAL_SOLUTION\Chroma_2_Case\StatTrakNegevMan-o'-war.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\Analysis\THE_FINAL_SOLUTION\Chroma_2_Case\StatTrakP250Valence.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\Analysis\THE_FINAL_SOLUTION\Chroma_2_Case\StatTrakSawed-OffOrigami.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\Analysis\THE_FINAL_SOLUTION\Chroma_2_Case\StatTrakUMP-45Grand_Prix.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\Analysis\THE_FINAL_SOLUTION\Chroma_2_Case\UMP-45Grand_Prix.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\Analysis\THE_FINAL_SOLUTION\Operation_Bravo_Case\AWPGraphite.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\Data\Agents\agents.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\Data\Cases\ALL_CASES.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\Data\Cases\CS20 Case.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\Data\Cases\CSGO Weapon Case.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\Data\Cases\Chroma 2 Case.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\Data\Cases\Chroma Case.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\Data\Cases\Clutch Case.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\Data\Cases\Dreams and Nightmares Case.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\Data\Cases\Fracture Case.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\Data\Cases\Operation Broken Fang Case.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\Data\Cases\Operation Riptide Case.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\Data\Cases\Prisma 2 Case.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\Data\Cases\Prisma Case.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\Data\Cases\Recoil Case.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\Data\Cases\Revolution Case.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\Data\Cases\Shattered Web Case.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\Data\Cases\Snakebite Case.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\Data\Cases\Winter Offensive Weapon Case.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\Data\Float\floatCaps.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\Data\Float\floatLinks.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\Data\Gloves\gloves.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\Data\Knifes\knifes.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\Data\Stickers\stickers.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\Data\Weapons\weapons.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\Data\Weapons\weaponsMiscellaneous.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
+              <option name="separator" value=":" />
             </Attribute>
           </value>
         </entry>
-        <entry key="\Data\unfinishedAllItems.csv">
+        <entry key="\tmp\weaponItems.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />

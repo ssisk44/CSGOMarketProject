@@ -1,4 +1,6 @@
-import Tools.ETLData as ETLData
+import os
+from src.ETLData import ETLData
+from dotenv import load_dotenv
 
 ############################################################################
 ############################### GAME PLAN ##################################
@@ -11,7 +13,7 @@ import Tools.ETLData as ETLData
 # Trade up bot -> https://automatetheboringstuff.com/chapter18/
 # market listing bot w/ steam guard email code fetcher bot
 
-### Continue Trade Up Analysis
+### Continue Trade Up analyis
 # add float cap trade up transition into analysis
 
 # avg max min roi based off of release date for cases
@@ -20,6 +22,17 @@ import Tools.ETLData as ETLData
 # $$$$$$$$$$$ CASES - Chroma 2, PRISMA, Shattered Web
 
 def main():
-    ETLData.runETLDataPipeline()
+    load_dotenv()
+    ### set environment base path
+    os.environ['BASE_DIR'] = os.getcwd() + '\\'
+
+    # testing ETLData.py
+    dataPipeline = ETLData()
+    dataPipeline.runDBDataETLPipeline()
+
+
+    # q = Query()
+    # res = q.executeSingularQuery('SELECT * FROM static_data.items;')
+    # print(res)
 
 main()
