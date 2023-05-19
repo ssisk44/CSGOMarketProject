@@ -116,15 +116,19 @@ def weaponSkinDataToDB():
 
     allWeaponSkinEntryData = []
     for container in allCaseData:
-        caseIndex = container[0]
-        caseName = container[1]
-        caseIsCollection = container[2]
+        ws_case_id = container[0]
+        ws_case_name = container[1]
+        # isCase to determine Stattrak or Souvenir
+        isCase = not container[2]
         caseLink = container[3]
 
+        # visit case link and get each weapon card
+        # take easy pickins data
 
-        print(container)
+        # for each weapon get float range and append data
 
-    sql = "INSERT INTO static_data.weaponSkins () VALUES "
+    sql = "INSERT INTO static_data.weaponSkins (ws_id, w_name, ws_name, ws_w_id, ws_median_price, ws_is_stattrak, " \
+          "ws_case_id, ws_case_name, ws_min_float, ws_max_float, ws_r_id, ws_is_souvenir) VALUES "
     count = 0  ### FUTURE ERROR HERE
     for entry in allWeaponSkinEntryData:
         count += 1
