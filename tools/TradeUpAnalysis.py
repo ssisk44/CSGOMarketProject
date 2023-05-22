@@ -2,7 +2,7 @@ import os
 import pandas as pd
 import src.weaponFloatDataRetriever as WFH
 import tools.PriceHandler as PH
-import tools.FileHandler as FH
+import tools.fileHandler as FH
 
 
 # https://csgoskins.gg/markets/market-csgo

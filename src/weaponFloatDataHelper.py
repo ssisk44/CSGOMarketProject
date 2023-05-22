@@ -5,7 +5,7 @@ import pandas as pd
 from bs4 import BeautifulSoup
 import requests
 import sys
-import tools.FileHandler as FileHandler
+import tools.fileHandler as FileHandler
 import tools.PriceHandler as PriceHandler
 
 wearArray = [

@@ -73,6 +73,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\resources\cases\Clutch Case.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\resources\cases\Danger Zone Case.csv">
           <value>
             <Attribute>
@@ -157,6 +164,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\resources\cases\Operation Hydra Case.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\resources\cases\Operation Phoenix Weapon Case.csv">
           <value>
             <Attribute>
@@ -199,6 +213,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\resources\cases\Recoil Case.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\resources\cases\Revolution Case.csv">
           <value>
             <Attribute>
@@ -221,6 +242,13 @@
           </value>
         </entry>
         <entry key="\resources\cases\Shattered Web Case.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\resources\cases\Snakebite Case.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
@@ -297,7 +325,21 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\tmp\caseItems.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\tmp\graffitiItems.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\tmp\keyItems.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />

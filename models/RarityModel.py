@@ -1,10 +1,31 @@
 import database.query as Query
 
+rarityMap = {
+    "Consumer": 0,
+    "Industrial": 1,
+    "Mil-Spec": 2,
+    "Restricted": 3,
+    "Classified": 4,
+    "Covert": 5
+}
+
+reverseRarityMap = {
+    0: "Consumer",
+    1: "Industrial",
+    2: "Mil-Spec",
+    3: "Restricted",
+    4: "Classified",
+    5: "Covert"
+}
+
+
 def getRarityNameByRarityID(rarityID: int):
-    res = Query.executeSingularQuery('SELECT rarityName from static_data.rarity WHERE rarityID = ' + str(rarityID) + ';')
-    return res[0][0]
+    return reverseRarityMap[rarityID]
+
 
 def getRarityIDByRarityName(rarityName: str):
-    sql = "SELECT rarityID FROM static_data.rarity WHERE rarityName = '" + rarityName + "';"
-    res = Query.executeSingularQuery(sql)
-    return res[0][0]
+    return rarityMap[rarityName]
+
+
+def getNextRarityNameByRarityName(rarityName: str):
+    return reverseRarityMap[rarityMap[rarityName] + 1]
