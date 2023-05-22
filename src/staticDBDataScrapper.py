@@ -6,9 +6,9 @@ from bs4 import BeautifulSoup
 import requests
 from tools.seleniumHelper import createNewChromeDriver
 import database.query as Query
-from models.CaseModel import getAllContainers
-from models.CaseModel import getContainerIndexByName
-from models.RarityModel import getRarityIDByRarityName
+from controllers.caseController import getAllContainers
+from controllers.caseController import getContainerIndexByName
+from controllers.rarityController import getRarityIDByRarityName
 import sys
 import tools.fileHandler as FileHandler
 import tools.PriceHandler as PriceHandler

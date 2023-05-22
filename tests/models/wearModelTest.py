@@ -1,4 +1,4 @@
-import models.WearModel as WearModel
+import controllers.wearController as WearModel
 import sys
 
 ### getWearNameByID

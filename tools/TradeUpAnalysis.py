@@ -7,47 +7,6 @@ import tools.fileHandler as FH
 
 # https://csgoskins.gg/markets/market-csgo
 
-def getAllItemsForACase(caseName):
-    allItems = pd.read_csv('../tmp/Weapons/weapons.csv').to_numpy()
-    caseItems = []
-    for entry in allItems:
-        if entry[2] == caseName:
-            caseItems.append(entry)
-    return caseItems
-
-
-def parseDataFromAllCaseItems(allCaseItems):
-    retArr = []
-    for entry in allCaseItems:
-        retArr.append([entry[0], entry[1], entry[2], entry[3], entry[4], entry[5], round(entry[-7], 2)])
-    return retArr
-
-
-def getUniqueItemsFromArray(array, gunName=True, skinName=True, wearName=True, returnUnique=False):
-    uniqueEntries = []
-    retArr = []
-    for entry in array:
-        newEntry = []
-
-        # optional selection of unique specifications
-        if gunName:
-            newEntry.append(entry[0])
-        if skinName:
-            newEntry.append(entry[1])
-        if wearName:
-            newEntry.append(entry[3])
-        newEntry.append(entry[5])
-
-        if newEntry not in uniqueEntries:
-            uniqueEntries.append(newEntry)
-            if returnUnique:
-                retArr.append(entry[0:2] + entry[4:])
-            else:
-                retArr.append(entry[0:2] + entry[3:])
-
-    return retArr
-
-
 # generating all 10 billion skin combinations per float is too expensive, this is my cheap implementation at attempting
 # to fully search the profitability of single weapon skin wear mixing profitability :)
 

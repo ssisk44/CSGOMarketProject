@@ -1,4 +1,4 @@
-import models.RarityModel as RarityModel
+import controllers.rarityController as RarityModel
 import sys
 
 res1 = RarityModel.getRarityNameByRarityID(0)
