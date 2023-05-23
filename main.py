@@ -1,5 +1,5 @@
 import os
-from src.ETLData import ETLData
+from tmp.ETLData import ETLData
 from dotenv import load_dotenv
 
 ############################################################################
@@ -22,17 +22,6 @@ from dotenv import load_dotenv
 # $$$$$$$$$$$ CASES - Chroma 2, PRISMA, Shattered Web
 
 def main():
-    load_dotenv()
-    ### set environment base path
-    os.environ['BASE_DIR'] = os.getcwd() + '\\'
-
-    # testing ETLData.py
-    dataPipeline = ETLData()
-    dataPipeline.runDBDataETLPipeline()
-
-
-    # q = Query()
-    # res = q.executeSingularQuery('SELECT * FROM static_data.items;')
-    # print(res)
+    None
 
 main()

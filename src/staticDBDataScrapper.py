@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 from bs4 import BeautifulSoup
 import requests
-from tools.seleniumHelper import createNewChromeDriver
+from tools.chromedriverHelper import createNewChromeDriver
 import database.query as Query
 from controllers.caseController import getAllContainers
 from controllers.caseController import getContainerIndexByName

@@ -10,7 +10,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
-from tools.seleniumHelper import createNewChromeDriver
+from tools.chromedriverHelper import createNewChromeDriver
 
 """
 This file is designed to conduct ACTUAL steam market listing price recon and retrieval

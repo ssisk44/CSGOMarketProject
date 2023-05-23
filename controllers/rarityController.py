@@ -1,4 +1,12 @@
 import database.query as Query
+rarityArray = [
+    "Consumer",
+    "Industrial",
+    "Mil-Spec",
+    "Restricted",
+    "Classified",
+    "Covert"
+]
 
 rarityMap = {
     "Consumer": 0,

@@ -1,5 +1,11 @@
 import database.query as Query
-
+wearArray = [
+    'Factory New',
+    'Minimal Wear',
+    'Field-Tested',
+    'Well-Worn',
+    'Battle-Scarred'
+]
 wearMap = {
     'Factory New': 0,
     'Minimal Wear': 1,
@@ -23,24 +29,21 @@ wearRangeMap = {
 }
 
 ### needs a function to search range qualifier
-reverseWearRangeMap = {
-    [0.00, 0.0699999999999999999999999999999999999]: 'Factory New',
-    [0.07, 0.149999999999999999999999999999999999]: 'Minimal Wear',
-    [0.15, 0.379999999999999999999999999999999999]: 'Field-Tested',
-    [0.38, 0.449999999999999999999999999999999999]: 'Well-Worn',
-    [0.45, 1.00]: 'Battle-Scarred'
-}
+reverseWearRange = [
+    [0.00, 0.0699999999999999999999999999999999999],
+    [0.07, 0.149999999999999999999999999999999999],
+    [0.15, 0.379999999999999999999999999999999999],
+    [0.38, 0.449999999999999999999999999999999999],
+    [0.45, 1.00]
+]
 
-# def getWearNameByID(id: int):
-#     res = Query.executeSingularQuery('SELECT wearName from static_data.wear WHERE wearID = ' + str(id) + ';')
-#     return res[0][0]
-#
-# def getWearFloatMinMaxByID(id: int):
-#     res = Query.executeSingularQuery('SELECT wearFloatMin,wearFloatMax from static_data.wear WHERE wearID = ' + str(id) + ';')
-#     return [res[0][0], res[0][1]]
-#
-# def getWearIDByWearName(wearName: str):
-#     sql = "SELECT wearID FROM static_data.wear WHERE wearName = '" + wearName + "';"
-#     res = Query.executeSingularQuery(sql)
-#     return res[0][0]
-#
+def findWearNameRangeFromValue(value: float):
+    """
+    TESTED AND WORKING :)
+    :param value:
+    :return:
+    """
+    for index in range(0, len(reverseWearRange)):
+        floatRange = reverseWearRange[index]
+        if floatRange[0] <= value < floatRange[1]:
+            return reverseWearMap[index]
