@@ -28,3 +28,6 @@ For example:
 - How do the basal weapons develop their price value at all, and over the course of their release?
 - What makes the counter strike ecosystem a true fair market, and are their other games like this?
 - In other games with fair markets, is there a theoretical mathmatical formula to define the value of items?
+- Is there a strong correlation between price of skin with varying magnitudes of bright wavelength colors on weapons?
+-What makes a skin physically and socially more expensive. i.e. certain skin pattern features: female reproductive pattern glock, notable player has used skin recently, for a while, or at all, rare float weapons or cool float patterns .420, weapon investment value in liquidity (investor money), social favor or perception changes for skin, is the skin still being dropped or available Howl (scarcity), skin rarity and drop probability (scarcity), time since release (scarcity), estimated total supply (scarcity), trading frequency (investor money)
+
