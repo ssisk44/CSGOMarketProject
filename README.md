@@ -15,4 +15,4 @@ For example:
 - In other games with fair markets, is there a theoretical mathmatical formula to define the value of items?
 
 LESSON
-- Every commercial item in existence, physical, or digitial, has a derived value. Digital value is both volatile and possibly expensive because its untility is incalculably nonrealistic. 
+- Every commercial item in existence, physical, or digitial, has a derived value. Digital value is both volatile and possibly expensive because the item's lack of utility is incalculably unrealistic. To greater understand the non-mathematical, human minded market behavior of evaluating a 0-utility item, I think it is important to look into social psycology, digital psycology?!, macro and micro economics. With the Steam CS:GO Marketplace having a net total of 1.3 billion dollar asset evaluations (https://liquidsky.com/how-much-is-csgo-market-worth/), it is reasonable to think that a properly executed market evaluation and effective (get-rich-quick) plan could blossom into a small fortune (https://github.com/sshh12). While understanding the psycologoical mindset of a digital consumer good is useful, my primary route of thinking for this project 
