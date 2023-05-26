@@ -16,7 +16,7 @@ def getCheapestTradeUpChoice(entries):
         return False
     return cheapestEntry
 
-def getNextRarityLevelAveragePrice(containerSkins, rarity_int, outputWear, isCollection, isStatOrSouv):
+def getNextRarityLevelAveragePrice(containerSkins, rarity_int:int, outputWear:str, isCollection, isStatOrSouv, debug = False):
     """
     TESTED AND WORKING
     :param containerEntries:
@@ -31,7 +31,8 @@ def getNextRarityLevelAveragePrice(containerSkins, rarity_int, outputWear, isCol
     if isCollection:
         isColl = 1
     entries = wSC.getEntries(containerSkins, r_int, outputWear, isColl, isStatOrSouv)
-
+    if debug:
+        print(entries)
     totalPrice = 0
     numWeapons = 0
     for entry in entries:
@@ -43,35 +44,19 @@ def getNextRarityLevelAveragePrice(containerSkins, rarity_int, outputWear, isCol
     average = round(totalPrice/numWeapons, 2)
     return average
 
-def getCombinationInputPrice(map, combination, debug = False):
-
+def getCombinationInputsPrice(map, combination, rarityLevelName, debug = False):
+    """TESTED AND WORKING"""
     # iterate through combination to calculate inputs price
     combinationArr = combination[2]
     totalPrice = 0
-    numberWeapons = 0
     for index in range(0, len(combinationArr)):
-        wearLevel = reverseWearMap[index]
-        numberValue = combinationArr[index]
-
-        ### WHERE YOU LEFT OFF
-        ### WHERE YOU LEFT OFF
-        ### WHERE YOU LEFT OFF
-        ### WHERE YOU LEFT OFF
-        ### WHERE YOU LEFT OFF
-        ### WHERE YOU LEFT OFF
-        <<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>
-        ### WHERE YOU LEFT OFF
-        ### WHERE YOU LEFT OFF
-        ### WHERE YOU LEFT OFF
-        ### WHERE YOU LEFT OFF
-        ### WHERE YOU LEFT OFF
-        ### WHERE YOU LEFT OFF
-        ### WHERE YOU LEFT OFF
-
-
-
-
-
-        if type(price) == float and price > 0:
-            numWeapons += 1
-            totalPrice += price
+        if combinationArr[index] > 0:
+            wearLevelName = reverseWearMap[index]
+            numberValue = combinationArr[index]
+            price = map[rarityLevelName][wearLevelName][-1]
+            if debug:
+                print(combinationArr, numberValue, rarityLevelName, wearLevelName, map[rarityLevelName][wearLevelName], map[rarityLevelName][wearLevelName][-1])
+            priceMultiplierTotal = numberValue * price
+            totalPrice += priceMultiplierTotal
+    returnPrice = round(totalPrice, 2)
+    return returnPrice

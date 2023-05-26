@@ -367,7 +367,21 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\tmp\pinArItems.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\tmp\stickerItems.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\tmp\test.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
