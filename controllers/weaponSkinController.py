@@ -1,7 +1,8 @@
 from typing import List
-
+import controllers.wearController as wC
 import database.query as Query
 from tools.databaseOutputFormatter import *
+
 
 
 def getAllSkinsForAContainer(container: str):
@@ -103,3 +104,19 @@ def getEntries(entries: List[list], rarity: int, wear: str, isCollection: int, s
                 retEntries.append(entry)
 
     return retEntries
+
+def getPriceForWeapon(containerSkins, weaponName, weaponSkinName, wearLevelName, isCollection:bool, statOrSouv):
+    # ready search values
+    isStat = 0
+    isSouv = 0
+    if isCollection:
+        if statOrSouv:
+            isSouv = 1
+    else:
+        if statOrSouv:
+            isStat = 1
+
+    for entry in containerSkins:
+        if entry[3] == weaponName and entry[2] == weaponSkinName and entry[4] == wearLevelName and entry[8] == str(isStat) and entry[9] == str(isSouv):
+            return entry[-1]
+

@@ -73,22 +73,22 @@ def createTradeUpEfficiencyMaps():
     return [allCaseValueMap, allCaseStatOrSouvValueMap]
 
 
-
-
-def findProfitableTradeUps(map, statOrSouv = 0):
+def findProfitableTradeUps(map, statOrSouv=0):
     """
     Cycles through pre-made efficient weapons map to calculate the efficiency of each trade up combination
     :param map:
     :param statOrSouv:
     :return:
     """
-    allOutputCombinations = []
 
     ### get combination matrix for later
     fCG = floatCombinationsGenerator()
     floatCombinations = fCG.main()
 
     for caseName in map:
+        print("Starting Basic Analysis For", caseName)
+        allOutputCombinations = []
+
         for rarityLevelName in map[caseName]:
             containerSkins = wSC.getAllSkinsForAContainer(caseName)
             isCase = containerSkins[0][-2]  # ASSUMES THE FIRST WEAPON IS A STATTRAK ENTRY
@@ -96,8 +96,14 @@ def findProfitableTradeUps(map, statOrSouv = 0):
             if isCase == 0:
                 containerIsCollection = True
 
+            thisMap = map[caseName][rarityLevelName]
+            weaponSkinIDArr = []
+            for entry in thisMap:
+                weaponSkinIDArr.append(thisMap[entry][0])
+
             for combination in floatCombinations:
                 comboEntry = []
+
                 # get outputs price
                 outputMinFloat = combination[0]
                 outputMaxFloat = combination[1]
@@ -105,27 +111,42 @@ def findProfitableTradeUps(map, statOrSouv = 0):
 
                 # get average price of next rarity level for output wear in the same case
                 rarityInt = rC.rarityMap[rarityLevelName]
-                outputAvgMin = tUH.getNextRarityLevelAveragePrice(containerSkins, rarityInt, outputWearOfMinFloat, containerIsCollection, statOrSouv)
+                outputAvgMin = tUH.getNextRarityLevelAveragePrice(containerSkins, rarityInt, outputWearOfMinFloat, containerIsCollection, statOrSouv, outputMinFloat, True)
 
-                # NOT REALLY USEFUL?!?!... write later
+                # NOT REALLY USEFUL?!?!... maximal value is found from minimal float variations but there is a slight possibility of profitable trades here
                 outputWearOfMaxFloat = wC.findWearNameRangeFromValue(outputMaxFloat)
 
-                inputsPrice = tUH.getCombinationInputsPrice(map[caseName], combination, rarityLevelName)
-                print(inputsPrice, "\n")
+                # get wear efficiency range
+                wearEfficiencyRange = wC.findWearEfficiencyRange(outputMinFloat)
 
+                # prepare outputs
+                comboEntry.append(wearEfficiencyRange)
                 comboEntry.append(outputMinFloat)
                 comboEntry.append(outputMaxFloat)
+                for weaponSkinID in weaponSkinIDArr:
+                    comboEntry.append(weaponSkinID)
                 for number in combination[2]:
-                    comboEntry.append(number)
+                    comboEntry.append(int(number))
+                inputsPrice = tUH.getCombinationInputsPrice(map[caseName], combination, rarityLevelName)
                 comboEntry.append(inputsPrice)
                 comboEntry.append(outputAvgMin)
-                comboEntry.append(round(outputAvgMin-inputsPrice, 2))
-                allOutputCombinations.append(comboEntry)
-        fH.writeDFToFilepathAsCSV(allOutputCombinations, None, '../tmp/test.csv')
-        print(allOutputCombinations)
-        sys.exit('Quit process after first case')
+                profit = round(outputAvgMin-inputsPrice, 2)
+                comboEntry.append(profit)
+
+                # filter combination entries
+                if wearEfficiencyRange > 0 and profit > 0:
+                    allOutputCombinations.append(comboEntry)
+
+        statOrSouvName = ''
+        if statOrSouv:
+            statOrSouvName = "Stattrak"
+        fH.writeDFToFilepathAsCSV(
+            array=allOutputCombinations,
+            columns=["Wear Efficiency Range", "Minimum Possible Wear", "Maximum Possible Wear", "FN wsID", "MW wsID", "FT wsID", "WW wsID", "BS wsID", "#FN", "#MW", "#FT", "#WW", "#BS", "Inputs $", "Output Avg $", "Average Return $"],
+            filepath='../tmp/totalCaseOutput/' + caseName.replace(" ", "") + statOrSouvName + '.csv',
+            sortVal=15
+        )
+        # sys.exit('Quit process after first case')
 
 
 
-
-main()

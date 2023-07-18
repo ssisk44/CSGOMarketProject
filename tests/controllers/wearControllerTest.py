@@ -1,36 +1,20 @@
-import controllers.wearController as wearController
-import sys
+import controllers.wearController as wC
+import unittest
 
-# ### getWearNameByID
-# res1 = WearModel.getWearNameByID(0)
-# res2 = WearModel.getWearNameByID(1)
-# if res1 != 'Factory New':
-#     sys.exit("TEST FAILED")
-# if res2 != 'Minimal Wear':
-#     sys.exit("TEST FAILED")
-#
-# ### getWearFloatMinMaxByID
-# res = WearModel.getWearFloatMinMaxByID(1)
-# if res != [0.07, 0.15]:
-#     sys.exit("TEST FAILED")
-#
-# ### getWearFloatMinMaxByWearName
-# res = WearModel.getWearIDByWearName('Minimal Wear')
-# if res != 1:
-#     sys.exit("TEST FAILED")
+class WearControllerTest(unittest.TestCase):
 
+    def testFindWearNameRangeFromValue(self):
+        res = wC.findWearNameRangeFromValue(0.01)
+        print(res)
 
-res = wearController.findWearNameRangeFromValue(0.01)
-print(res)
+        res = wC.findWearNameRangeFromValue(0.0699)
+        print(res)
 
-res = wearController.findWearNameRangeFromValue(0.0699)
-print(res)
+        res = wC.findWearNameRangeFromValue(0.07)
+        print(res)
 
-res = wearController.findWearNameRangeFromValue(0.07)
-print(res)
-
-res = wearController.findWearNameRangeFromValue(0.071)
-print(res)
+        res = wC.findWearNameRangeFromValue(0.071)
+        print(res)
 
 
 
@@ -41,5 +25,5 @@ print(res)
 
 
 
-
-print("WearModelTest PASSED")
+if __name__ == '__main__':
+    unittest.main()

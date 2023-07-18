@@ -47,3 +47,11 @@ def findWearNameRangeFromValue(value: float):
         floatRange = reverseWearRange[index]
         if floatRange[0] <= value < floatRange[1]:
             return reverseWearMap[index]
+
+def findWearRangeMaxFloatByWearName(wearName):
+    return wearRangeMap[wearName][-1]
+
+def findWearEfficiencyRange(minOutputFloat):
+    wearName = findWearNameRangeFromValue(minOutputFloat)
+    wearEffRange = round(findWearRangeMaxFloatByWearName(wearName) - minOutputFloat, 4)
+    return wearEffRange

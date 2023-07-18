@@ -1,25 +1,47 @@
+import unittest
 from controllers.weaponSkinController import *
 from controllers.rarityController import *
-
-res1 = getAllSkinsForAContainer("Revolution Case")
-if len(res1) != 166:
-    print("TEST FAILED")
-
-rarityID = getRarityNameByRarityID(4)
-res2 = getEntriesByCaseAndRarity('Revolution Case', 4)
-
-res3 = getUniqueWeaponEntriesByCaseAndRarity('Revolution Case', 4)
-if len(res3) != 3:
-    print("TEST FAILED")
-
-res4 = getFloatRangeFromEntry([21, 'Revolution Case', 'Duality', 'AWP', 'Factory New', 0.0, 0.7, '4', 1, 0, 139.68])
-if res4 != [0.0, 0.7]:
-    print("TEST FAILED", res4)
-
-entries = [[1, 'Revolution Case', 'Temukau', 'M4A4', 'Factory New', 0.0, 0.8, '5', 1, 0, 944.0], [2, 'Revolution Case', 'Temukau', 'M4A4', 'Minimal Wear', 0.0, 0.8, '4', 1, 0, 382.62], [3, 'Revolution Case', 'Temukau', 'M4A4', 'Field-Tested', 0.0, 0.8, '3', 1, 0, 90.0]]
-res5 = getEntriesByWearLevel(entries, 'Factory New')
-res6 = getEntriesByRarityLevel(entries, 4)
+import tools.staticAssets as testAssets
 
 
-res7 = getEntries(entries, 5, 'Factory New', 0, 1)
-print(res7)
+class WeaponSkinControllerTest(unittest.TestCase):
+    entry = testAssets.getTestWeaponSkinEntry()
+    entries = testAssets.getTestWeaponSkinEntries()
+
+    def testGetAllSkinsForAContainer(self):
+        res = getAllSkinsForAContainer("Revolution Case")
+        self.assertEqual(len(res), 166, "Should be 166")
+
+    def testGetRarityNameByRarityID(self):
+        rarityID = getRarityNameByRarityID(4)
+        res = getEntriesByCaseAndRarity('Revolution Case', 4)
+        self.assertEqual(len(res), 30, "Should be 30")
+        self.assertEqual(res[0][7], '4', 'Should be 4')
+
+    def testGetUniqueWeaponEntriesByCaseAndRarity(self):
+        res = getUniqueWeaponEntriesByCaseAndRarity('Revolution Case', 4)
+        self.assertEqual(len(res), 3, "Should be 3")
+
+    def testGetFloatRangeFromEntry(self):
+        res = getFloatRangeFromEntry(self.entry)
+        self.assertEqual(res, [0.0, 0.7], "Should be [0.0, 0.7]")
+
+    def testGetEntriesByWearLevel(self):
+        res = getEntriesByWearLevel(self.entries, 'Factory New')
+        self.assertEqual(len(res), 1, "Should be 1")
+
+    def getEntriesByRarityLevel(self):
+        res = getEntriesByRarityLevel(self.entries, 4)
+        self.assertEqual(len(res), 30, "Should be 30")
+
+    def testGetEntries(self):
+        res = getEntries(self.entries, 5, 'Factory New', 0, 1)
+        self.assertEqual(len(res), 1, "Should be 1")
+
+    def testGetWeaponPrice(self):
+        res = getPriceForWeapon('M4A4', "Temukau", "Factory New", 0, 1)
+        self.assertEqual(res, 944.0, "Should be 944.0")
+
+
+if __name__ == '__main__':
+    unittest.main()
